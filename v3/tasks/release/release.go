@@ -665,7 +665,7 @@ func buildReleaseBody(version, changelogContent string) string {
 		"",
 		"**Installation:**",
 		"```bash",
-		fmt.Sprintf("go install github.com/wailsapp/wails/v3/cmd/wails3@%s", version),
+		fmt.Sprintf("go install github.com/KrakenTech-LLC/wails/v3/cmd/wails3@%s", version),
 		"```",
 		"",
 		"**⚠️ Alpha Warning:** This is pre-release software and may contain bugs or incomplete features.",

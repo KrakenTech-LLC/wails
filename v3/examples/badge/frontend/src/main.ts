@@ -1,5 +1,5 @@
 import {Events} from "@wailsio/runtime";
-import {SetBadge, RemoveBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/dock/dockservice";
+import {SetBadge, RemoveBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/dock/dockservice";
 
 const setButton = document.getElementById('set')! as HTMLButtonElement;
 const removeButton = document.getElementById('remove')! as HTMLButtonElement;

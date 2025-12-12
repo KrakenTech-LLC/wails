@@ -8,8 +8,8 @@ Now that you have your project set up, it's time to explore the custom badge fea
 On Windows, you can customize the badge appearance with various options:
 
 ```go
-import "github.com/wailsapp/wails/v3/pkg/application"
-import "github.com/wailsapp/wails/v3/pkg/services/badge"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/application"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/services/badge"
 import "image/color"
 
 // Create a badge service with custom options
@@ -51,7 +51,7 @@ badgeService.SetBadge("New")
 
 #### JS
 ```js
-import {SetBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/badge/service";
+import {SetBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/badge/service";
 
 // Set a default badge
 SetBadge("")
@@ -81,7 +81,7 @@ badgeService.SetCustomBadge("New")
 
 #### JS
 ```js
-import {SetCustomBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/badge/service";
+import {SetCustomBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/badge/service";
 
 const options = {
    BackgroundColour: RGBA.createFrom({
@@ -122,7 +122,7 @@ badgeService.RemoveBadge()
 
 #### JS
 ```js
-import {RemoveBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/badge/service";
+import {RemoveBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/badge/service";
 
 RemoveBadge()
 ```

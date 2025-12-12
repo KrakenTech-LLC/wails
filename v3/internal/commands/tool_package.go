@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"strings"
 
-	// "github.com/wailsapp/wails/v3/internal/commands/dmg" // TODO: Missing package
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/packager"
+	// "github.com/KrakenTech-LLC/wails/v3/internal/commands/dmg" // TODO: Missing package
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/packager"
 )
 
 // ToolPackage generates a package in the specified format
@@ -46,7 +46,7 @@ func ToolPackage(options *flags.ToolPackage) error {
 		// DMG creation temporarily disabled - missing dmg package
 		_ = dmgPath // avoid unused variable warning
 		return fmt.Errorf("DMG creation is temporarily disabled due to missing dmg package")
-		
+
 		// // Create DMG creator
 		// dmgCreator, err := dmg.New(appPath, dmgPath, options.ExecutableName)
 		// if err != nil {

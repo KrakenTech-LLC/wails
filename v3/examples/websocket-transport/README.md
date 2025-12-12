@@ -74,7 +74,7 @@ The frontend uses the WebSocket transport with **generated bindings**:
 ```typescript
 import { setTransport } from "/wails/runtime.js";
 import { createWebSocketTransport } from "/websocket-transport.js";
-import { GreetService } from "/bindings/github.com/wailsapp/wails/v3/examples/websocket-transport/index.js";
+import { GreetService } from "/bindings/github.com/KrakenTech-LLC/wails/v3/examples/websocket-transport/index.js";
 
 // Create and configure WebSocket transport
 const wsTransport = createWebSocketTransport('ws://localhost:9099/wails/ws', {

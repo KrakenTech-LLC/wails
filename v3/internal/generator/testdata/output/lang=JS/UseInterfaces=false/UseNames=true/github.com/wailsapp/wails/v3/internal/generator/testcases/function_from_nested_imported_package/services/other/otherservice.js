@@ -21,7 +21,7 @@ import * as $models from "./models.js";
  * @returns {$CancellablePromise<$models.Address | null>}
  */
 export function Yay() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/function_from_nested_imported_package/services/other.OtherService.Yay").then(/** @type {($result: any) => any} */(($result) => {
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/function_from_nested_imported_package/services/other.OtherService.Yay").then(/** @type {($result: any) => any} */(($result) => {
         return $$createType1($result);
     }));
 }

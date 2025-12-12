@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wailsapp/wails/v3/internal/fileexplorer"
+	"github.com/KrakenTech-LLC/wails/v3/internal/fileexplorer"
 )
 
 // Credit: https://stackoverflow.com/a/50631395

@@ -16,9 +16,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/operatingsystem"
+	"github.com/KrakenTech-LLC/wails/v3/internal/version"
 	"github.com/pkg/browser"
-	"github.com/wailsapp/wails/v3/internal/operatingsystem"
-	"github.com/wailsapp/wails/v3/internal/version"
 	"gopkg.in/yaml.v3"
 )
 

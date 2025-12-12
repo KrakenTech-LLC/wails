@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 	"github.com/charmbracelet/huh"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v3/internal/flags"
 )
 
 // Entitlement represents a macOS entitlement

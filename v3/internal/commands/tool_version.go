@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wailsapp/wails/v3/internal/github"
+	"github.com/KrakenTech-LLC/wails/v3/internal/github"
 )
 
 type ToolVersionOptions struct {

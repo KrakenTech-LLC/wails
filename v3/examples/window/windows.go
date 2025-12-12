@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/wailsapp/wails/v3/pkg/w32"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/w32"
 
 func init() {
 	getExStyle = func() int {

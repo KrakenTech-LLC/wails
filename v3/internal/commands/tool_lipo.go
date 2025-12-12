@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 	"github.com/konoui/lipo/pkg/lipo"
-	"github.com/wailsapp/wails/v3/internal/flags"
 )
 
 func ToolLipo(options *flags.Lipo) error {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/wailsapp/wails/v3/internal/generator/collect"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/collect"
 	"golang.org/x/tools/go/types/typeutil"
 )
 

@@ -5,8 +5,8 @@ import (
 	"encoding"
 	"log"
 
-	nobindingshere "github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here"
-	"github.com/wailsapp/wails/v3/pkg/application"
+	nobindingshere "github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 // GreetService is great

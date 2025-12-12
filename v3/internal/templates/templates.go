@@ -11,17 +11,17 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/wailsapp/wails/v3/internal/buildinfo"
-	"github.com/wailsapp/wails/v3/internal/s"
-	"github.com/wailsapp/wails/v3/internal/version"
+	"github.com/KrakenTech-LLC/wails/v3/internal/buildinfo"
+	"github.com/KrakenTech-LLC/wails/v3/internal/s"
+	"github.com/KrakenTech-LLC/wails/v3/internal/version"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/debug"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/pkg/errors"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v3/internal/debug"
 
-	"github.com/wailsapp/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 
 	"github.com/leaanthony/gosod"
 

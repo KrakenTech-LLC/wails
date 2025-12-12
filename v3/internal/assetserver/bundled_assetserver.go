@@ -1,7 +1,7 @@
 package assetserver
 
 import (
-	"github.com/wailsapp/wails/v3/internal/assetserver/bundledassets"
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver/bundledassets"
 	"io/fs"
 	"net/http"
 	"strings"

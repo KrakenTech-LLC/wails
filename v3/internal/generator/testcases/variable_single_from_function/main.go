@@ -4,7 +4,7 @@ import (
 	_ "embed"
 	"log"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 // GreetService is great
@@ -30,8 +30,8 @@ func main() {
 		},
 	})
 
-    _ = app.Window.New()          // discard
-    // or: win := app.Window.New() // keep for later
+	_ = app.Window.New() // discard
+	// or: win := app.Window.New() // keep for later
 
 	err := app.Run()
 

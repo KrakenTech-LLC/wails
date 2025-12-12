@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/gin-gonic/gin"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 //go:embed static

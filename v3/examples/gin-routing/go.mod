@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/wailsapp/wails/v3 v3.0.0
+	github.com/KrakenTech-LLC/wails/v3 v3.0.0
 )
 
 require (
@@ -68,4 +68,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/wailsapp/wails/v3 => ../..
+replace github.com/KrakenTech-LLC/wails/v3 => ../..

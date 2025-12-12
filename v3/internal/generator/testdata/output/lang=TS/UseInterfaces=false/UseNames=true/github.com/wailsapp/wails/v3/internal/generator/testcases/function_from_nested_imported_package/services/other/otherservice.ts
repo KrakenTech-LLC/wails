@@ -19,7 +19,7 @@ import * as $models from "./models.js";
  * Yay does this and that
  */
 export function Yay(): $CancellablePromise<$models.Address | null> {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/function_from_nested_imported_package/services/other.OtherService.Yay").then(($result: any) => {
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/function_from_nested_imported_package/services/other.OtherService.Yay").then(($result: any) => {
         return $$createType1($result);
     });
 }

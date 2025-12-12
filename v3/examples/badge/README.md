@@ -8,8 +8,8 @@ Now that you have your project set up, it's time to explore the basic badge feat
 First, initialize the badge service:
 
 ```go
-import "github.com/wailsapp/wails/v3/pkg/application"
-import "github.com/wailsapp/wails/v3/pkg/services/badge"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/application"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/services/badge"
 
 // Create a new badge service
 badgeService := badge.New()
@@ -42,7 +42,7 @@ badgeService.SetBadge("New")
 
 #### JS
 ```js
-import {SetBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/badge/service";
+import {SetBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/badge/service";
 
 // Set a default badge
 SetBadge("")
@@ -65,7 +65,7 @@ badgeService.RemoveBadge()
 
 #### JS
 ```js
-import {RemoveBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/badge/service";
+import {RemoveBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/badge/service";
 
 RemoveBadge()
 ```

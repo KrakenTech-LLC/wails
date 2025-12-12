@@ -9,10 +9,10 @@ import (
 	"github.com/pterm/pterm"
 	"github.com/samber/lo"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/commands"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/term"
 	"github.com/leaanthony/clir"
-	"github.com/wailsapp/wails/v3/internal/commands"
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/term"
 )
 
 func init() {
@@ -130,10 +130,10 @@ func main() {
 		return commands.SignWrapper(&signWrapperFlags, sign.OtherArgs())
 	})
 
-    // iOS tools
-    ios := app.NewSubCommand("ios", "iOS tooling")
-    ios.NewSubCommandFunction("overlay:gen", "Generate Go overlay for iOS bridge shim", commands.IOSOverlayGen)
-    ios.NewSubCommandFunction("xcode:gen", "Generate Xcode project in output directory", commands.IOSXcodeGen)
+	// iOS tools
+	ios := app.NewSubCommand("ios", "iOS tooling")
+	ios.NewSubCommandFunction("overlay:gen", "Generate Go overlay for iOS bridge shim", commands.IOSOverlayGen)
+	ios.NewSubCommandFunction("xcode:gen", "Generate Xcode project in output directory", commands.IOSXcodeGen)
 
 	app.NewSubCommandFunction("version", "Print the version", commands.Version)
 	app.NewSubCommand("sponsor", "Sponsor the project").Action(openSponsor)

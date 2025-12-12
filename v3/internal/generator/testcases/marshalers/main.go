@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 type Service struct{}

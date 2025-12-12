@@ -20,7 +20,7 @@ import * as $models from "./models.js";
  * @returns {$CancellablePromise<[$models.Person, $models.HowDifferent<boolean>, $models.PrivatePerson]>}
  */
 export function LikeThisOne() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOne").then(/** @type {($result: any) => any} */(($result) => {
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOne").then(/** @type {($result: any) => any} */(($result) => {
         $result[0] = $$createType0($result[0]);
         $result[1] = $$createType1($result[1]);
         $result[2] = $$createType2($result[2]);
@@ -33,7 +33,7 @@ export function LikeThisOne() {
  * @returns {$CancellablePromise<void>}
  */
 export function LikeThisOtherOne() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOtherOne");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOtherOne");
 }
 
 // Private type creation functions

@@ -7,12 +7,12 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/wailsapp/wails/v3/examples/services/hashes"
-	"github.com/wailsapp/wails/v3/pkg/application"
-	"github.com/wailsapp/wails/v3/pkg/services/fileserver"
-	"github.com/wailsapp/wails/v3/pkg/services/kvstore"
-	"github.com/wailsapp/wails/v3/pkg/services/log"
-	"github.com/wailsapp/wails/v3/pkg/services/sqlite"
+	"github.com/KrakenTech-LLC/wails/v3/examples/services/hashes"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/services/fileserver"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/services/kvstore"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/services/log"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/services/sqlite"
 )
 
 //go:embed assets/*

@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 	"github.com/stretchr/testify/assert"
-	"github.com/wailsapp/wails/v3/internal/flags"
 )
 
 func TestWrapTask(t *testing.T) {

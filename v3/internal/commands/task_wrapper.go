@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/wailsapp/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 )
 
 // runTaskFunc is a variable to allow mocking in tests

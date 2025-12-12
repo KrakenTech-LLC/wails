@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/wailsapp/wails/v3/examples/binding/data"
+	"github.com/KrakenTech-LLC/wails/v3/examples/binding/data"
 )
 
 // GreetService is a service that greets people

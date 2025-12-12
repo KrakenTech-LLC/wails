@@ -21,5 +21,5 @@ import * as $models from "./models.js";
  * @returns {$CancellablePromise<$models.Address | null>}
  */
 export function Yay() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/struct_literal_multiple_other/services.OtherService.Yay");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/struct_literal_multiple_other/services.OtherService.Yay");
 }

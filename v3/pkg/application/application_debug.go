@@ -46,7 +46,7 @@ func (a *App) logStartup() {
 	}
 
 	wailsPackage, _ := lo.Find(BuildInfo.Deps, func(dep *debug.Module) bool {
-		return dep.Path == "github.com/wailsapp/wails/v3"
+		return dep.Path == "github.com/KrakenTech-LLC/wails/v3"
 	})
 
 	wailsVersion := version.String()

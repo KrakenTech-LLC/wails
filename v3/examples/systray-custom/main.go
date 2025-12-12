@@ -2,9 +2,9 @@ package main
 
 import (
 	_ "embed"
-	"github.com/wailsapp/wails/v3/pkg/application"
-	"github.com/wailsapp/wails/v3/pkg/events"
-	"github.com/wailsapp/wails/v3/pkg/icons"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/icons"
 	"log"
 	"runtime"
 )

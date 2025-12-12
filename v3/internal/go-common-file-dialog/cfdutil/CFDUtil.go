@@ -1,7 +1,7 @@
 package cfdutil
 
 import (
-	"github.com/wailsapp/wails/v3/internal/go-common-file-dialog/cfd"
+	"github.com/KrakenTech-LLC/wails/v3/internal/go-common-file-dialog/cfd"
 )
 
 // TODO doc

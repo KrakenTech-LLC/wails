@@ -14,5 +14,5 @@ import { Call as $Call, CancellablePromise as $CancellablePromise } from "/wails
  * LikeThisOtherOne does nothing as well, but is different.
  */
 export function LikeThisOtherOne(): $CancellablePromise<void> {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here/other.OtherMethods.LikeThisOtherOne");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here/other.OtherMethods.LikeThisOtherOne");
 }

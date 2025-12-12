@@ -5,10 +5,10 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
-	apptest "github.com/wailsapp/wails/v3/pkg/application/internal/tests"
-	svctest "github.com/wailsapp/wails/v3/pkg/application/internal/tests/services"
-	"github.com/wailsapp/wails/v3/pkg/events"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
+	apptest "github.com/KrakenTech-LLC/wails/v3/pkg/application/internal/tests"
+	svctest "github.com/KrakenTech-LLC/wails/v3/pkg/application/internal/tests/services"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 )
 
 func TestMain(m *testing.M) {

@@ -32,7 +32,7 @@ static void fix_signal(int signum)
 fix_signal_error:
         fprintf(stderr, "error fixing handler for signal %d, please "
                 "report this issue to "
-                "https://github.com/wailsapp/wails: %s\n",
+                "https://github.com/KrakenTech-LLC/wails: %s\n",
                 signum, strerror(errno));
 }
 

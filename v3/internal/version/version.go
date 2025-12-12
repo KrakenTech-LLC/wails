@@ -2,7 +2,7 @@ package version
 
 import (
 	_ "embed"
-	"github.com/wailsapp/wails/v3/internal/debug"
+	"github.com/KrakenTech-LLC/wails/v3/internal/debug"
 )
 
 //go:embed version.txt

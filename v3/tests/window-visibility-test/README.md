@@ -1,6 +1,6 @@
 # Window Visibility Test - Issue #2861
 
-This example demonstrates and tests the fixes implemented for [Wails v3 Issue #2861](https://github.com/wailsapp/wails/issues/2861) regarding application windows not showing on Windows 10 Pro due to efficiency mode.
+This example demonstrates and tests the fixes implemented for [Wails v3 Issue #2861](https://github.com/KrakenTech-LLC/wails/issues/2861) regarding application windows not showing on Windows 10 Pro due to efficiency mode.
 
 ## Problem Background
 

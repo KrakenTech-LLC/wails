@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/config"
+	"github.com/KrakenTech-LLC/wails/v3/internal/version"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v3/internal/generator/config"
-	"github.com/wailsapp/wails/v3/internal/version"
 	"golang.org/x/term"
 )
 

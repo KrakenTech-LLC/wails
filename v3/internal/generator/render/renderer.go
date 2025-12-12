@@ -7,8 +7,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/generator/collect"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/collect"
 )
 
 // Renderer holds the template set for a given configuration.

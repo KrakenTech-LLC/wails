@@ -167,7 +167,7 @@ func (f *Frontend) Run(ctx context.Context) error {
 			// If the window is frameless and we are minimizing, then we need to suppress the Resize on the
 			// WebView2. If we don't do this, restoring does not work as expected and first restores with some wrong
 			// size during the restore animation and only fully renders when the animation is done. This highly
-			// depends on the content in the WebView, see https://github.com/wailsapp/wails/issues/1319
+			// depends on the content in the WebView, see https://github.com/KrakenTech-LLC/wails/issues/1319
 			event, _ := arg.Data.(*winc.SizeEventData)
 			if event != nil && event.Type == w32.SIZE_MINIMIZED {
 				return

@@ -6,8 +6,8 @@ import (
 	"os"
 	"sync"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 type Config struct {
@@ -49,7 +49,7 @@ func NewWithConfig(config *Config) *KVStoreService {
 
 // ServiceName returns the name of the plugin.
 func (kvs *KVStoreService) ServiceName() string {
-	return "github.com/wailsapp/wails/v3/plugins/kvstore"
+	return "github.com/KrakenTech-LLC/wails/v3/plugins/kvstore"
 }
 
 // ServiceStartup loads the store from disk if it is associated with a file.

@@ -19,5 +19,5 @@ import * as $models from "./models.js";
  * Yay does this and that
  */
 export function Yay(): $CancellablePromise<$models.Address | null> {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/variable_single_from_other_function/services.OtherService.Yay");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/variable_single_from_other_function/services.OtherService.Yay");
 }

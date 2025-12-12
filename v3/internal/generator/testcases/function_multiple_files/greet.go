@@ -3,7 +3,7 @@ package main
 import (
 	_ "embed"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 type GreetService struct {

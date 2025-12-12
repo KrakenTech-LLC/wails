@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/godbus/dbus/v5"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 type linuxNotifier struct {

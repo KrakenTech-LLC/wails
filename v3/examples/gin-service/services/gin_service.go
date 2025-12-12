@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/gin-gonic/gin"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 // User represents a user in the system
@@ -22,12 +22,12 @@ type User struct {
 
 // GinService implements a Wails service that uses Gin for HTTP handling
 type GinService struct {
-	ginEngine         *gin.Engine
-	users             []User
-	nextID            int
-	mu                sync.RWMutex
-	app               *application.App
-	maxUsers          int // Maximum number of users to prevent unbounded growth
+	ginEngine          *gin.Engine
+	users              []User
+	nextID             int
+	mu                 sync.RWMutex
+	app                *application.App
+	maxUsers           int    // Maximum number of users to prevent unbounded growth
 	removeEventHandler func() // Store cleanup function for event handler
 }
 

@@ -3,7 +3,7 @@ package commands
 import (
 	"context"
 	"fmt"
-	"github.com/wailsapp/wails/v3/internal/term"
+	"github.com/KrakenTech-LLC/wails/v3/internal/term"
 	"os"
 	"path/filepath"
 	"strings"
@@ -125,7 +125,7 @@ func RunTask(options *RunTaskOptions, otherArgs []string) error {
 
 	// Parse task name and CLI variables from otherArgs or os.Args
 	var tasksAndVars []string
-	
+
 	// Check if we have a task name specified in options
 	if options.Name != "" {
 		// If task name is provided via options, use it and treat otherArgs as CLI variables
@@ -159,13 +159,13 @@ func RunTask(options *RunTaskOptions, otherArgs []string) error {
 	// Parse task name and CLI variables
 	taskName := tasksAndVars[0]
 	cliVars := tasksAndVars[1:]
-	
+
 	// Create call with CLI variables
 	call := &ast.Call{
 		Task: taskName,
 		Vars: &ast.Vars{},
 	}
-	
+
 	// Parse CLI variables (format: KEY=VALUE)
 	for _, v := range cliVars {
 		if strings.Contains(v, "=") {

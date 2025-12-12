@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/wailsapp/wails/v3/internal/generator/collect"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/collect"
 )
 
 // hasdoc checks whether the given comment group contains actual doc comments.

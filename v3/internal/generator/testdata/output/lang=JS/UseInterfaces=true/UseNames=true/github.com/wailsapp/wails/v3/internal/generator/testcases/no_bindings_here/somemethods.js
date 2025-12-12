@@ -20,7 +20,7 @@ import * as $models from "./models.js";
  * @returns {$CancellablePromise<[$models.Person, $models.HowDifferent<boolean>, $models.PrivatePerson]>}
  */
 export function LikeThisOne() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOne");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOne");
 }
 
 /**
@@ -28,5 +28,5 @@ export function LikeThisOne() {
  * @returns {$CancellablePromise<void>}
  */
 export function LikeThisOtherOne() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOtherOne");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOtherOne");
 }

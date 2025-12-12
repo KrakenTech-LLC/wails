@@ -10,5 +10,5 @@ import { Call as $Call, CancellablePromise as $CancellablePromise } from "/wails
  * @returns {$CancellablePromise<void>}
  */
 export function TestMethod2() {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/complex_expressions/config.Service9.TestMethod2");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/complex_expressions/config.Service9.TestMethod2");
 }

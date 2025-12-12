@@ -4,9 +4,9 @@ import (
 	_ "embed"
 	"log"
 
-	"github.com/wailsapp/wails/v3/internal/generator/testcases/function_from_nested_imported_package/services/other"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/function_from_nested_imported_package/services/other"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 // GreetService is great

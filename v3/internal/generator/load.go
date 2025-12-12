@@ -5,7 +5,7 @@ import (
 	"go/parser"
 	"go/token"
 
-	"github.com/wailsapp/wails/v3/internal/generator/config"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/config"
 	"golang.org/x/tools/go/packages"
 )
 

@@ -359,11 +359,11 @@ func execBuildApplication(builder Builder, options *Options) (string, error) {
 
 		tags := options.UserTags
 		if lo.Contains(tags, nativeWebView2Loader) {
-			message := "You are using the legacy native WebView2Loader. This loader will be deprecated in the near future. Please report any bugs related to the new loader: https://github.com/wailsapp/wails/issues/2004"
+			message := "You are using the legacy native WebView2Loader. This loader will be deprecated in the near future. Please report any bugs related to the new loader: https://github.com/KrakenTech-LLC/wails/issues/2004"
 			pterm.Warning.Println(message)
 		} else {
 			tags = append(tags, nativeWebView2Loader)
-			message := fmt.Sprintf("Wails is now using the new Go WebView2Loader. If you encounter any issues with it, please report them to https://github.com/wailsapp/wails/issues/2004. You could also use the old legacy loader with `-tags %s`, but keep in mind this will be deprecated in the near future.", strings.Join(tags, ","))
+			message := fmt.Sprintf("Wails is now using the new Go WebView2Loader. If you encounter any issues with it, please report them to https://github.com/KrakenTech-LLC/wails/issues/2004. You could also use the old legacy loader with `-tags %s`, but keep in mind this will be deprecated in the near future.", strings.Join(tags, ","))
 			pterm.Info.Println(message)
 		}
 	}

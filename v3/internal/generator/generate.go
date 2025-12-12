@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/generator/collect"
-	"github.com/wailsapp/wails/v3/internal/generator/config"
-	"github.com/wailsapp/wails/v3/internal/generator/render"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/collect"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/config"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/render"
 )
 
 // Generator wraps all bookkeeping data structures that are needed

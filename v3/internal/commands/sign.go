@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/keychain"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/keychain"
 )
 
 // Sign signs a binary or package

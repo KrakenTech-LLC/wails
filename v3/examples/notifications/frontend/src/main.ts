@@ -1,5 +1,5 @@
 import { Events } from "@wailsio/runtime";
-import { NotificationService } from "../bindings/github.com/wailsapp/wails/v3/pkg/services/notifications";
+import { NotificationService } from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/notifications";
 
 const footer = document.querySelector("#response");
 

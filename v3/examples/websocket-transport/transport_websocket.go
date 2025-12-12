@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"sync"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/gorilla/websocket"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 //go:embed websocket-transport.js

@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 // GreetService is great

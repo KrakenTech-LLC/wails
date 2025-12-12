@@ -1,7 +1,7 @@
 package setupwizard
 
 import (
-	"github.com/wailsapp/wails/v3/internal/defaults"
+	"github.com/KrakenTech-LLC/wails/v3/internal/defaults"
 )
 
 // Re-export types for convenience

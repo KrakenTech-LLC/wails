@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 // registerIOSRuntimeEventHandlers registers Go-side event listeners that mutate iOS WKWebView at runtime.

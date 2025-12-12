@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"text/template"
 
-	"github.com/wailsapp/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 )
 
 //go:embed build_assets/windows/msix/*

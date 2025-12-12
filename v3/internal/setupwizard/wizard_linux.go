@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wailsapp/wails/v3/internal/doctor/packagemanager"
-	"github.com/wailsapp/wails/v3/internal/operatingsystem"
+	"github.com/KrakenTech-LLC/wails/v3/internal/doctor/packagemanager"
+	"github.com/KrakenTech-LLC/wails/v3/internal/operatingsystem"
 )
 
 func (w *Wizard) checkAllDependencies() []DependencyStatus {

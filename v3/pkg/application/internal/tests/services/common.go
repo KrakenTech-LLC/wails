@@ -6,8 +6,8 @@ import (
 	"sync/atomic"
 	"testing"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 type Config struct {

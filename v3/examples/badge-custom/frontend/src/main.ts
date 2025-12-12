@@ -1,5 +1,5 @@
 import {Events} from "@wailsio/runtime";
-import {SetBadge, RemoveBadge, SetCustomBadge} from "../bindings/github.com/wailsapp/wails/v3/pkg/services/dock/dockservice";
+import {SetBadge, RemoveBadge, SetCustomBadge} from "../bindings/github.com/KrakenTech-LLC/wails/v3/pkg/services/dock/dockservice";
 import { RGBA } from "../bindings/image/color/models";
 
 const setCustomButton = document.getElementById('set-custom')! as HTMLButtonElement;

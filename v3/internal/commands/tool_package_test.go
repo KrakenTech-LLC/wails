@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wailsapp/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
 )
 
 func TestToolPackage(t *testing.T) {
@@ -58,12 +58,12 @@ func TestToolPackage(t *testing.T) {
 				}
 
 				return &flags.ToolPackage{
-					Format:         "DEB",
-					ConfigPath:     configPath,
-					ExecutableName: "myapp",
-				}, func() {
-					os.RemoveAll(filepath.Join(dir, "bin"))
-				}
+						Format:         "DEB",
+						ConfigPath:     configPath,
+						ExecutableName: "myapp",
+					}, func() {
+						os.RemoveAll(filepath.Join(dir, "bin"))
+					}
 			},
 			wantErr: false,
 		},
@@ -85,12 +85,12 @@ func TestToolPackage(t *testing.T) {
 				}
 
 				return &flags.ToolPackage{
-					Format:         "RPM",
-					ConfigPath:     configPath,
-					ExecutableName: "myapp",
-				}, func() {
-					os.RemoveAll(filepath.Join(dir, "bin"))
-				}
+						Format:         "RPM",
+						ConfigPath:     configPath,
+						ExecutableName: "myapp",
+					}, func() {
+						os.RemoveAll(filepath.Join(dir, "bin"))
+					}
 			},
 			wantErr: false,
 		},
@@ -112,12 +112,12 @@ func TestToolPackage(t *testing.T) {
 				}
 
 				return &flags.ToolPackage{
-					Format:         "ARCHLINUX",
-					ConfigPath:     configPath,
-					ExecutableName: "myapp",
-				}, func() {
-					os.RemoveAll(filepath.Join(dir, "bin"))
-				}
+						Format:         "ARCHLINUX",
+						ConfigPath:     configPath,
+						ExecutableName: "myapp",
+					}, func() {
+						os.RemoveAll(filepath.Join(dir, "bin"))
+					}
 			},
 			wantErr: false,
 		},

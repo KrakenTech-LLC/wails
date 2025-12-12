@@ -1,6 +1,6 @@
 package other
 
-import "github.com/wailsapp/wails/v3/pkg/application"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/application"
 
 func CustomNewService[T any](srv T) application.Service {
 	return application.NewService(&srv)

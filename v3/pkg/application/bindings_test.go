@@ -166,7 +166,7 @@ func TestBoundMethodCall(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			callOptions := &application.CallOptions{
-				MethodName: "github.com/wailsapp/wails/v3/pkg/application_test.TestService." + tt.method,
+				MethodName: "github.com/KrakenTech-LLC/wails/v3/pkg/application_test.TestService." + tt.method,
 			}
 
 			method := bindings.Get(callOptions)

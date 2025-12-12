@@ -94,7 +94,7 @@ func NewWindow(appoptions *options.App, debug bool, devtoolsEnabled bool) *Windo
 	if appoptions.Linux != nil {
 		webviewGpuPolicy = int(appoptions.Linux.WebviewGpuPolicy)
 	} else {
-		// workaround for https://github.com/wailsapp/wails/issues/2977
+		// workaround for https://github.com/KrakenTech-LLC/wails/issues/2977
 		webviewGpuPolicy = int(linux.WebviewGpuPolicyNever)
 	}
 

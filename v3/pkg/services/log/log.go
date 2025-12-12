@@ -56,7 +56,7 @@ func NewWithConfig(config *Config) *LogService {
 // ServiceName returns the name of the plugin.
 // You should use the go module format e.g. github.com/myuser/myplugin
 func (l *LogService) ServiceName() string {
-	return "github.com/wailsapp/wails/v3/plugins/log"
+	return "github.com/KrakenTech-LLC/wails/v3/plugins/log"
 }
 
 // Configure reconfigures the logger dynamically.

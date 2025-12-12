@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/wailsapp/wails/v3/internal/templates"
+	"github.com/KrakenTech-LLC/wails/v3/internal/templates"
 )
 
 func GenerateTemplate(options *templates.BaseTemplate) error {

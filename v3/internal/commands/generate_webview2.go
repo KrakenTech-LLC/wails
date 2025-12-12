@@ -3,7 +3,7 @@ package commands
 import (
 	_ "embed"
 	"fmt"
-	"github.com/wailsapp/wails/v3/internal/term"
+	"github.com/KrakenTech-LLC/wails/v3/internal/term"
 	"os"
 	"path/filepath"
 )

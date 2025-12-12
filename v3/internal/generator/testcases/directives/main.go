@@ -14,8 +14,8 @@ import (
 	_ "embed"
 	"log"
 
-	"github.com/wailsapp/wails/v3/internal/generator/testcases/directives/otherpackage"
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/directives/otherpackage"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 type IgnoredType struct {

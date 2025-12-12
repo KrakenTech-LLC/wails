@@ -12,13 +12,13 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/config"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/render"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/generator/config"
-	"github.com/wailsapp/wails/v3/internal/generator/render"
 )
 
-const testcases = "github.com/wailsapp/wails/v3/internal/generator/testcases/..."
+const testcases = "github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/..."
 
 type testParams struct {
 	name      string
@@ -122,7 +122,7 @@ func TestGenerator(t *testing.T) {
 						for i, msg := range warnings {
 							// Handle both Unix and Windows path separators
 							msg = strings.ReplaceAll(msg, "\\", "/")
-							
+
 							// Check if this is a file path (contains line:column position)
 							// File paths look like: /path/to/file.go:123:45: message
 							// Package paths look like: package github.com/...: message

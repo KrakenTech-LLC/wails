@@ -1,8 +1,8 @@
 package render
 
 import (
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/generator/collect"
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/collect"
 	"golang.org/x/tools/go/types/typeutil"
 )
 

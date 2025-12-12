@@ -18,12 +18,12 @@ import * as $models from "./models.js";
  * LikeThisOne is an example method that does nothing.
  */
 export function LikeThisOne(): $CancellablePromise<[$models.Person, $models.HowDifferent<boolean>, $models.PrivatePerson]> {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOne");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOne");
 }
 
 /**
  * LikeThisOtherOne does nothing as well, but is different.
  */
 export function LikeThisOtherOne(): $CancellablePromise<void> {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOtherOne");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/no_bindings_here.SomeMethods.LikeThisOtherOne");
 }

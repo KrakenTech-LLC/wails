@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/wailsapp/wails/v3/internal/doctor"
+	"github.com/KrakenTech-LLC/wails/v3/internal/doctor"
 )
 
 type DoctorOptions struct{}

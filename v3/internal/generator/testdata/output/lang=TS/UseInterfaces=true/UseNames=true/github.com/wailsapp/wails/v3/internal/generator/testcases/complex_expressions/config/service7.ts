@@ -6,5 +6,5 @@
 import { Call as $Call, CancellablePromise as $CancellablePromise } from "/wails/runtime.js";
 
 export function TestMethod(): $CancellablePromise<void> {
-    return $Call.ByName("github.com/wailsapp/wails/v3/internal/generator/testcases/complex_expressions/config.Service7.TestMethod");
+    return $Call.ByName("github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/complex_expressions/config.Service7.TestMethod");
 }

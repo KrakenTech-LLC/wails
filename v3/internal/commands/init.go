@@ -9,14 +9,14 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/defaults"
+	"github.com/KrakenTech-LLC/wails/v3/internal/term"
 	"github.com/go-git/go-git/v5/config"
-	"github.com/wailsapp/wails/v3/internal/defaults"
-	"github.com/wailsapp/wails/v3/internal/term"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/flags"
+	"github.com/KrakenTech-LLC/wails/v3/internal/templates"
 	"github.com/go-git/go-git/v5"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v3/internal/flags"
-	"github.com/wailsapp/wails/v3/internal/templates"
 )
 
 var DisableFooter bool

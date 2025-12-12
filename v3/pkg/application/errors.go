@@ -31,7 +31,7 @@ func (e *FatalError) Error() string {
 	buffer.WriteString("\n\n******************************** FATAL *********************************\n")
 	buffer.WriteString("*      There has been a catastrophic failure in your application.      *\n")
 	if e.internal {
-		buffer.WriteString("* Please report this error at https://github.com/wailsapp/wails/issues *\n")
+		buffer.WriteString("* Please report this error at https://github.com/KrakenTech-LLC/wails/issues *\n")
 	}
 	buffer.WriteString("**************************** Error Details *****************************\n")
 	buffer.WriteString(e.err.Error())

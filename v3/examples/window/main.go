@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v3/pkg/events"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 // This is a stub for non-windows platforms

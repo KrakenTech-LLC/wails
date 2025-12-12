@@ -1,6 +1,6 @@
 package other
 
-import "github.com/wailsapp/wails/v3/pkg/application"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/application"
 
 type Factory[T any, U any] struct {
 	simpleFactory[T]

@@ -35,7 +35,7 @@ import (
 	"context"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 type darwinDock struct{}
@@ -73,16 +73,16 @@ func (d *darwinDock) ShowAppIcon() {
 
 // SetBadge sets the badge label on the application icon.
 func (d *darwinDock) SetBadge(label string) error {
-    // Always pick a label (use “●” if empty), then allocate + free exactly once.
-    value := label
-    if value == "" {
-        value = "●" // Default badge character
-    }
-    cLabel := C.CString(value)
-    defer C.free(unsafe.Pointer(cLabel))
+	// Always pick a label (use “●” if empty), then allocate + free exactly once.
+	value := label
+	if value == "" {
+		value = "●" // Default badge character
+	}
+	cLabel := C.CString(value)
+	defer C.free(unsafe.Pointer(cLabel))
 
-    C.setBadge(cLabel)
-    return nil
+	C.setBadge(cLabel)
+	return nil
 }
 
 // SetCustomBadge is not supported on macOS, SetBadge is called instead.

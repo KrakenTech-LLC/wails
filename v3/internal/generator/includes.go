@@ -7,7 +7,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/wailsapp/wails/v3/internal/generator/collect"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/collect"
 )
 
 // generateIncludes copies included files to the package directory

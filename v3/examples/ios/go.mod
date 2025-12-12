@@ -4,7 +4,7 @@ go 1.24.0
 
 toolchain go1.24.6
 
-require github.com/wailsapp/wails/v3 v3.0.0-dev
+require github.com/KrakenTech-LLC/wails/v3 v3.0.0-dev
 
 require (
 	dario.cat/mergo v1.0.1 // indirect
@@ -49,4 +49,4 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
 
-replace github.com/wailsapp/wails/v3 => ../../../v3
+replace github.com/KrakenTech-LLC/wails/v3 => ../../../v3

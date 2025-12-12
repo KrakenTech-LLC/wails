@@ -1,8 +1,8 @@
 package commands
 
 import (
+	"github.com/KrakenTech-LLC/wails/v3/internal/signal"
 	"github.com/atterpac/refresh/engine"
-	"github.com/wailsapp/wails/v3/internal/signal"
 	"gopkg.in/yaml.v3"
 	"os"
 )
@@ -35,31 +35,31 @@ func Watcher(options *WatcherOptions) error {
 	if err != nil {
 		return err
 	}
-	
+
 	// Setup cleanup function that stops the engine
 	cleanup := func() {
 		watcherEngine.Stop()
 	}
 	defer cleanup()
-	
+
 	// Signal handler needs to notify when to stop
 	signalCleanup := func() {
 		cleanup()
 		stopChan <- struct{}{}
 	}
-	
+
 	signalHandler := signal.NewSignalHandler(signalCleanup)
 	signalHandler.ExitMessage = func(sig os.Signal) string {
 		return ""
 	}
 	signalHandler.Start()
-	
+
 	// Start the engine
 	err = watcherEngine.Start()
 	if err != nil {
 		return err
 	}
-	
+
 	<-stopChan
 	return nil
 }

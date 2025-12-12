@@ -21,7 +21,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 type darwinNotifier struct {

@@ -4,8 +4,8 @@ import (
 	_ "embed"
 	"log"
 
-	"github.com/wailsapp/wails/v3/internal/generator/testcases/complex_instantiations/other"
-	"github.com/wailsapp/wails/v3/pkg/application"
+	"github.com/KrakenTech-LLC/wails/v3/internal/generator/testcases/complex_instantiations/other"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 )
 
 type Service1 struct{}
