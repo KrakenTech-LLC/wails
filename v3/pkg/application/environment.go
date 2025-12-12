@@ -1,6 +1,6 @@
 package application
 
-import "github.com/wailsapp/wails/v3/internal/operatingsystem"
+import "github.com/KrakenTech-LLC/wails/v3/internal/operatingsystem"
 
 // EnvironmentInfo represents information about the current environment.
 //

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/wailsapp/wails/v3/internal/assetserver"
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver"
 )
 
 var devMode = false

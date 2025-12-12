@@ -149,7 +149,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v3/internal/runtime"
+	"github.com/KrakenTech-LLC/wails/v3/internal/runtime"
 )
 
 var (

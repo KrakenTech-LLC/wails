@@ -14,18 +14,18 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver"
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver/webview"
+	"github.com/KrakenTech-LLC/wails/v3/internal/capabilities"
+	"github.com/KrakenTech-LLC/wails/v3/internal/runtime"
 	"github.com/bep/debounce"
 	"github.com/wailsapp/go-webview2/webviewloader"
-	"github.com/wailsapp/wails/v3/internal/assetserver"
-	"github.com/wailsapp/wails/v3/internal/assetserver/webview"
-	"github.com/wailsapp/wails/v3/internal/capabilities"
-	"github.com/wailsapp/wails/v3/internal/runtime"
 
 	"github.com/samber/lo"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/w32"
 	"github.com/wailsapp/go-webview2/pkg/edge"
-	"github.com/wailsapp/wails/v3/pkg/events"
-	"github.com/wailsapp/wails/v3/pkg/w32"
 )
 
 var edgeMap = map[string]uintptr{

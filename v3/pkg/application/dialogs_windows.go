@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wailsapp/wails/v3/internal/go-common-file-dialog/cfd"
-	"github.com/wailsapp/wails/v3/pkg/w32"
+	"github.com/KrakenTech-LLC/wails/v3/internal/go-common-file-dialog/cfd"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/w32"
 	"golang.org/x/sys/windows"
 )
 

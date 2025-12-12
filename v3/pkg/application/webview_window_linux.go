@@ -8,11 +8,11 @@ import (
 
 	"unsafe"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver"
+	"github.com/KrakenTech-LLC/wails/v3/internal/capabilities"
+	"github.com/KrakenTech-LLC/wails/v3/internal/runtime"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 	"github.com/bep/debounce"
-	"github.com/wailsapp/wails/v3/internal/assetserver"
-	"github.com/wailsapp/wails/v3/internal/capabilities"
-	"github.com/wailsapp/wails/v3/internal/runtime"
-	"github.com/wailsapp/wails/v3/pkg/events"
 )
 
 type dragInfo struct {

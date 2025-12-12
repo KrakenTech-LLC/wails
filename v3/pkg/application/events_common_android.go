@@ -2,7 +2,7 @@
 
 package application
 
-import "github.com/wailsapp/wails/v3/pkg/events"
+import "github.com/KrakenTech-LLC/wails/v3/pkg/events"
 
 // Map platform events → common events (same pattern as macOS & others)
 var commonApplicationEventMap = map[events.ApplicationEventType]events.ApplicationEventType{

@@ -12,9 +12,9 @@ import (
 
 	"github.com/leaanthony/u"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v3/internal/assetserver"
-	"github.com/wailsapp/wails/v3/pkg/events"
 )
 
 // Enabled means the feature should be enabled

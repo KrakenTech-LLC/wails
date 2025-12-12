@@ -8,9 +8,9 @@ import (
 	"strings"
 	"unsafe"
 
+	"github.com/KrakenTech-LLC/wails/v3/internal/assetserver/webview"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 	"github.com/ebitengine/purego"
-	"github.com/wailsapp/wails/v3/internal/assetserver/webview"
-	"github.com/wailsapp/wails/v3/pkg/events"
 )
 
 type windowPointer uintptr

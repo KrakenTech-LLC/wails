@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/application"
 	"github.com/matryer/is"
-	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
 type ScreenDef struct {

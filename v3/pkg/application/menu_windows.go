@@ -3,7 +3,7 @@
 package application
 
 import (
-	"github.com/wailsapp/wails/v3/pkg/w32"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/w32"
 )
 
 type windowsMenu struct {
@@ -93,7 +93,7 @@ func (w *windowsMenu) processMenu(parentMenu w32.HMENU, inputMenu *Menu) {
 			continue
 		}
 
-		w32.AppendMenu(parentMenu, flags, uintptr(itemID), menuText) 
+		w32.AppendMenu(parentMenu, flags, uintptr(itemID), menuText)
 		if item.bitmap != nil {
 			if err := w32.SetMenuIcons(parentMenu, itemID, item.bitmap, nil); err != nil {
 				globalApplication.fatal("error setting menu icons: %w", err)

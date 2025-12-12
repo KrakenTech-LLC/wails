@@ -7,8 +7,8 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v3/pkg/events"
 )
 
 type ApplicationEvent struct {

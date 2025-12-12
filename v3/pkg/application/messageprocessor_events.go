@@ -3,7 +3,7 @@ package application
 import (
 	"encoding/json"
 
-	"github.com/wailsapp/wails/v3/pkg/errs"
+	"github.com/KrakenTech-LLC/wails/v3/pkg/errs"
 )
 
 const (

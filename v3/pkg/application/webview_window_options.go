@@ -1,8 +1,8 @@
 package application
 
 import (
+	"github.com/KrakenTech-LLC/wails/v3/pkg/events"
 	"github.com/leaanthony/u"
-	"github.com/wailsapp/wails/v3/pkg/events"
 )
 
 type WindowState int
