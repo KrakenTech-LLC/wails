@@ -1,4 +1,4 @@
-module github.com/wailsapp/wails/v3
+module github.com/KrakenTech-LLC/wails/v3
 
 go 1.24.0
 
