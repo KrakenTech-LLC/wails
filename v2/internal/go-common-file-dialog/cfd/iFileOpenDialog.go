@@ -4,8 +4,8 @@
 package cfd
 
 import (
+	"github.com/KrakenTech-LLC/wails/v2/internal/go-common-file-dialog/util"
 	"github.com/go-ole/go-ole"
-	"github.com/wailsapp/wails/v2/internal/go-common-file-dialog/util"
 	"syscall"
 	"unsafe"
 )

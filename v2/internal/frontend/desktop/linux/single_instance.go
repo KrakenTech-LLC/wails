@@ -5,8 +5,8 @@ package linux
 
 import (
 	"encoding/json"
+	"github.com/KrakenTech-LLC/wails/v2/pkg/options"
 	"github.com/godbus/dbus/v5"
-	"github.com/wailsapp/wails/v2/pkg/options"
 	"log"
 	"os"
 	"strings"

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/KrakenTech-LLC/wails/v2/pkg/menu"
 )
 
 type ContextMenu struct {

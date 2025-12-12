@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/KrakenTech-LLC/wails/v2/cmd/wails/flags"
+	"github.com/KrakenTech-LLC/wails/v2/internal/colour"
+	"github.com/KrakenTech-LLC/wails/v2/internal/shell"
 	"github.com/labstack/gommon/color"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v2/cmd/wails/flags"
-	"github.com/wailsapp/wails/v2/internal/colour"
-	"github.com/wailsapp/wails/v2/internal/shell"
 
-	"github.com/wailsapp/wails/v2/internal/github"
+	"github.com/KrakenTech-LLC/wails/v2/internal/github"
 )
 
 // AddSubcommand adds the `init` command for the Wails application

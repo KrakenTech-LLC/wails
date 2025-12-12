@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
+	"github.com/KrakenTech-LLC/wails/v2/internal/fs"
 
 	"github.com/fsnotify/fsnotify"
 	gitignore "github.com/sabhiram/go-gitignore"

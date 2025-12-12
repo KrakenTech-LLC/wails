@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/fs"
+	"github.com/KrakenTech-LLC/wails/v2/internal/frontend"
+	"github.com/KrakenTech-LLC/wails/v2/internal/fs"
 )
 
 // FileFilter defines a filter for dialog boxes
