@@ -68,7 +68,7 @@ func (s *BrowserDataStore) Clear() {
 }
 
 // GetCookies returns cookies for a specific window
-func (s *BrowserDataStore) GetCookies(windowName string) map[string]string {
+func (s *BrowserDataStore) GetCookies(windowName string) []map[string]interface{} {
 	data := s.Get(windowName)
 	if data == nil {
 		return nil
