@@ -756,9 +756,9 @@ func (a *App) handleWindowMessage(event *windowMessage) {
 		a.warning("WebviewWindow #%d not found", event.windowId)
 		return
 	}
-	// Check if the message starts with "wails:"
-	if strings.HasPrefix(event.message, "wails:") {
-		a.info("handleWindowMessage: Processing wails message", "message", event.message)
+	// Check if the message starts with "wails:" or "browser:data:"
+	if strings.HasPrefix(event.message, "wails:") || strings.HasPrefix(event.message, "browser:data:") {
+		a.info("handleWindowMessage: Processing wails/browser message", "message", event.message)
 		window.HandleMessage(event.message)
 	} else {
 		if a.options.RawMessageHandler != nil {
