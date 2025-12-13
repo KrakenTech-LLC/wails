@@ -730,8 +730,32 @@ func (w *WebviewWindow) HandleMessage(message string) {
 			w.ExecJS(js)
 		}
 		w.pendingJS = nil
+	case strings.HasPrefix(message, "browser:data:"):
+		// Handle browser data extraction from browser mode windows (macOS fallback path)
+		// This is used when the wails runtime is not available (e.g., on external sites)
+		jsonData := strings.TrimPrefix(message, "browser:data:")
+		w.handleBrowserDataMessage(jsonData)
 	default:
 		w.Error("unknown message sent via 'invoke' on frontend: %v", message)
+	}
+}
+
+// handleBrowserDataMessage processes browser data extraction messages from browser mode windows.
+// This is the fallback path used when the wails runtime is not available (e.g., on external sites).
+func (w *WebviewWindow) handleBrowserDataMessage(jsonData string) {
+	var browserData BrowserData
+	err := json.Unmarshal([]byte(jsonData), &browserData)
+	if err != nil {
+		w.Error("failed to parse browser data: %v", err)
+		return
+	}
+
+	// Store in global browser data store
+	GetBrowserDataStore().Store(browserData.WindowName, &browserData)
+
+	// Call the OnDataExtracted callback if set
+	if w.options.BrowserMode != nil && w.options.BrowserMode.OnDataExtracted != nil {
+		w.options.BrowserMode.OnDataExtracted(&browserData)
 	}
 }
 
