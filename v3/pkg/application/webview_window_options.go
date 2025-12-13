@@ -188,8 +188,8 @@ type BrowserData struct {
 	// URL is the current URL of the page
 	URL string
 
-	// Cookies contains all cookies accessible to the page
-	Cookies map[string]string
+	// Cookies contains all cookies accessible to the page as full cookie objects
+	Cookies []map[string]interface{}
 
 	// LocalStorage contains all localStorage key-value pairs
 	LocalStorage map[string]string
