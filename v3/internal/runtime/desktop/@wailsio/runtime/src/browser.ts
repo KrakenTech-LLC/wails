@@ -13,6 +13,7 @@ import { newRuntimeCaller, objectNames } from "./runtime.js";
 const call = newRuntimeCaller(objectNames.Browser);
 
 const BrowserOpenURL = 0;
+const BrowserSendData = 1;
 
 /**
  * Open a browser window to the given URL.
@@ -21,4 +22,14 @@ const BrowserOpenURL = 0;
  */
 export function OpenURL(url: string | URL): Promise<void> {
     return call(BrowserOpenURL, {url: url.toString()});
+}
+
+/**
+ * Send extracted browser data back to Go.
+ * Used internally by BrowserMode data extraction.
+ *
+ * @param data - The JSON-stringified browser data
+ */
+export function sendData(data: string): Promise<void> {
+    return call(BrowserSendData, {data});
 }
