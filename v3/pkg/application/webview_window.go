@@ -735,10 +735,6 @@ func (w *WebviewWindow) HandleMessage(message string) {
 		// This is used when the wails runtime is not available (e.g., on external sites)
 		jsonData := strings.TrimPrefix(message, "browser:data:")
 		w.handleBrowserDataMessage(jsonData)
-	case strings.HasPrefix(message, "inspector-data:"):
-		// Handle custom inspector data (tokens, endpoints) from browser mode windows
-		jsonData := strings.TrimPrefix(message, "inspector-data:")
-		w.handleInspectorDataMessage(jsonData)
 	default:
 		w.Error("unknown message sent via 'invoke' on frontend: %v", message)
 	}
@@ -761,40 +757,6 @@ func (w *WebviewWindow) handleBrowserDataMessage(jsonData string) {
 	if w.options.BrowserMode != nil && w.options.BrowserMode.OnDataExtracted != nil {
 		w.options.BrowserMode.OnDataExtracted(&browserData)
 	}
-}
-
-// handleInspectorDataMessage processes custom inspector data (tokens, endpoints) from browser mode windows.
-func (w *WebviewWindow) handleInspectorDataMessage(jsonData string) {
-	var payload map[string]interface{}
-	err := json.Unmarshal([]byte(jsonData), &payload)
-	if err != nil {
-		w.Error("failed to parse inspector data: %v", err)
-		return
-	}
-
-	kind, _ := payload["kind"].(string)
-	url, _ := payload["url"].(string)
-	data := payload["data"]
-
-	w.Info("Received inspector data: kind=%s, url=%s, data=%v", kind, url, data)
-
-	// Invoke the SendInspectorData method
-	methodName := "ehook/internal/app.App.SendInspectorData"
-	w.invokeSync(methodName, payload)
-}
-
-// invokeSync synchronously invokes a bound method
-func (w *WebviewWindow) invokeSync(methodName string, args interface{}) {
-	// Marshal the args
-	argsJSON, err := json.Marshal(args)
-	if err != nil {
-		w.Error("failed to marshal args for %s: %v", methodName, err)
-		return
-	}
-
-	// Create a call message
-	callMessage := fmt.Sprintf(`wails:call:%s:%s`, methodName, string(argsJSON))
-	w.HandleMessage(callMessage)
 }
 
 func (w *WebviewWindow) startResize(border string) error {

@@ -206,6 +206,12 @@ type BrowserData struct {
 	// CustomData contains any custom data extracted by user scripts
 	// User scripts can populate this by calling window.wails.browserData.setCustom(key, value)
 	CustomData map[string]interface{}
+
+	// Tokens contains extracted tokens (JWT, API keys, etc.)
+	Tokens []map[string]interface{}
+
+	// Endpoints contains extracted API endpoints
+	Endpoints []map[string]interface{}
 }
 
 type RGBA struct {
