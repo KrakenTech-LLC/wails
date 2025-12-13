@@ -772,12 +772,11 @@ func (w *WebviewWindow) handleInspectorDataMessage(jsonData string) {
 		return
 	}
 
-	// Call the bound method directly via the message processor
 	kind, _ := payload["kind"].(string)
 	url, _ := payload["url"].(string)
 	data := payload["data"]
 
-	w.Info("Received inspector data: kind=%s, url=%s", kind, url)
+	w.Info("Received inspector data: kind=%s, url=%s, data=%v", kind, url, data)
 
 	// Invoke the SendInspectorData method
 	methodName := "ehook/internal/app.App.SendInspectorData"
