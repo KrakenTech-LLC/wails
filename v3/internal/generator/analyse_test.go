@@ -22,7 +22,7 @@ func TestAnalyser(t *testing.T) {
 		events bool
 	}
 
-	// Gather tests from cases directory.
+	// Enrich tests from cases directory.
 	entries, err := os.ReadDir("testcases")
 	if err != nil {
 		t.Fatal(err)

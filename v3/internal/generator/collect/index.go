@@ -43,7 +43,7 @@ func (info *PackageInfo) Index(TS bool) (index *PackageIndex) {
 		NumPackages: 1,
 	}
 
-	// Gather services.
+	// Enrich services.
 	for _, value := range info.services.Range {
 		service := value.(*ServiceInfo)
 		if !service.IsEmpty() {
@@ -75,7 +75,7 @@ func (info *PackageInfo) Index(TS bool) (index *PackageIndex) {
 		return strings.Compare(s1.Name, s2.Name)
 	})
 
-	// Gather models.
+	// Enrich models.
 	for _, value := range info.models.Range {
 		model := value.(*ModelInfo)
 		index.Models = append(index.Models, model)
